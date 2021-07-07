@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+
+{% block head %}
+<style>
+    .container {
+
+        
+        margin-top: 1%;
+        height: 20vh;
+        border-radius: 20%;
+
+    }
+
+    .card-body {
+        align-items: center;
+        height: 20vh;
+    }
+
+    .card-title {
+
+        text-align: center;
+        color: yellow;
+        font-style: bold;
+
+    }
+    .media-icons{
+         margin-top: 10px;
+  display: flex;
+    }
+
+    .media-icons a {
+        text-align: center;
+        line-height: 0vh;
+        height: 45px;
+        
+        margin: 0 4px;
+        font-size: 30px;
+        color: rgb(0, 247, 53);
+        
+        border: 30px solid transparent;
+        background: rgb(0, 0, 0);
+        transition: all 0.3s ease;
+       
+        
+        
+        
+        
+    }
+
+    .media-icons a:hover {
+        color: rgb(199, 106, 230);
+        background-color: rgb(235, 13, 13), 241);
+       
+    }
+    .audio{
+        width: fit-content;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock head %}
+{% block body %}
+{% load static %}
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card mx-30">
+                    <img src="{%static 'KNIT_app/photography.jpg'%}" class="card-img-top" style="height: 250px;" alt="...">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            MUSIC</h5>
+
+
+                        <div class="media-icons">
+                            <a href="mailto: bhar do .com" target="_blank"><i class="fas fa-envelope-open-text"></i></a>
+                            <a href="https://www.instagram.com/ bhar do2" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/p bhar do" target="_blank"><i
+                                    class="fab fa-facebook"></i></a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            {% endblock body %}

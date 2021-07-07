@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  <title>about</title>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  background-color: black;
+  
+  
+}
+
+.container{
+  max-width: 350px;
+  width: 100%;
+  flex: row;
+  padding: 80px 0;
+  
+}
+.container .main-card{
+  max-width: 350px;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+  flex-direction:column-reverse;
+}
+
+.container .main-card .cards{
+ width: 350px;
+ align-items: center;
+  margin: 0 20px;
+  flex: row;
+  justify-content: space-between;
+}
+.main-card .cards .card{
+  width: 320px;
+  background:rgb(236, 234, 234);
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+
+}
+
+.main-card .cards .card:hover{
+  transform: translateY(-15px);
+}
+.cards .card .content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.cards .card .content .img{
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: rgb(235, 232, 232);
+  margin-bottom: 14px;
+}
+.card .content .img img{
+  height: 100%;
+  width: 100%;
+  border: 3px solid rgb(226, 220, 220);
+  border-radius: 50%;
+  object-fit: cover;
+}
+.aHeading{
+ margin: 35px;
+ padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: #e6dfdf;
+}
+.card .content .name{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .content .job{
+  font-size: 15px;
+  color: yellow;
+}
+.card .content .media-icons{
+  margin-top: 10px;
+  display: flex;
+
+}
+.media-icons a{
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  margin: 0 4px;
+  font-size: 14px;
+  color: rgb(0, 247, 53);
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: rgb(223, 223, 223);
+  transition: all 0.3s ease;
+}
+.media-icons a:hover{
+  color: rgb(185, 7, 245);
+  background-color: #fff;
+  border-color: rgb(245, 242, 242);
+}
+
+
+.parag{
+  font-size :18px;
+  color: #e9e3e3;
+  margin: 10px;
+  padding: 10px;
+}
+
+.arrangem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+<body>
+  
+  {%load static%}
+  <div class="aHeading" >
+<H1 >
+  ABOUT US
+</H1>
+<div class="parag"><p>
+  In any journey, The most important factor is Learning and Growth in the process.</br> We as a team learned and that is
+   the thing which matters the most. </br>Contact Our team members from following their social media links...
+ </p>
+ </div>
+  </div>
+  <div class="arrangem">
+
+    <div class="container">
+      <div class="main-card">
+        <div class="cards">
+          <div class="card">
+           <div class="content">
+             <div class="img">
+              <img src="{%static 'KNIT_app/kau.jpg'%}" alt="">
+             </div>
+             <div class="details">
+               <div class="name" style="color: white;">Kaustubh Jaiswal</div>
+               <div class="job">I.T. Branch First Year</div>
+             </div>
+             <div class="media-icons">
+              <a href="mailto: bhar do .com"  target="_blank" ><i class="fas fa-envelope-open-text"></i></a>
+                <a href="https://www.instagram.com/ bhar do2"  target="_blank" ><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/p bhar do"  target="_blank" ><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/p bhar do870"  target="_blank" ><i class="fab fa-github"></i></a>
+            </div>
+             </div>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="main-card">
+          <div class="cards">
+            <div class="card">
+             <div class="content">
+               <div class="img">
+                <img src="{%static 'KNIT_app/2.jfif'%}" alt="">
+               </div>
+               <div class="details">
+                 <div class="name" style="color: white;">Priyanshu Srivastav</div>
+                 <div class="job">I.T. Branch First Year</div>
+               </div>
+               <div class="media-icons">
+                <a href="mailto:priyanshu.20637@gmail.com"  target="_blank" ><i class="fas fa-envelope-open-text"></i></a>
+                <a href="https://www.instagram.com/priyanshusrivastav2002"  target="_blank" ><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/priyanshu-srivastav-b067241ba"  target="_blank" ><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/priyanshu870"  target="_blank" ><i class="fab fa-github"></i></a>
+              </div>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="container">
+          <div class="main-card"> 
+            <div class="cards">
+              <div class="card">
+               <div class="content">
+                 <div class="img">
+                  <img src="{%static 'KNIT_app/3.jfif'%}" alt="">
+                 </div>
+                 <div class="details">
+                   <div class="name" style="color: white;">Rudransh Srivastava</div>
+                   <div class="job">I.T. Branch First Year</div>
+                 </div>
+                 <div class="media-icons">
+                  <a href="mailto:pri bhar do7@gmail.com"  target="_blank" ><i class="fas fa-envelope-open-text"></i></a>
+                <a href="https://www.instagram.com/pri bhar dovastav2002"  target="_blank" ><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/p bhar do-srivastav-b067241ba"  target="_blank" ><i class="fab fa-facebook"></i></a>
+                <a href="https://github.com/pr bhar do70"  target="_blank" ><i class="fab fa-github"></i></a>
+                   </div>
+                 </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="main-card">
+              <div class="cards">
+                <div class="card">
+                 <div class="content">
+                   <div class="img">
+                    <img src="{%static 'KNIT_app/4.jfif'%}" alt="">
+                   </div>
+                   <div class="details">
+                     <div class="name" style="color: white;">Shivansh Vasu</div>
+                     <div class="job">I.T. Branch First Year</div>
+                   </div>
+                   <div class="media-icons">
+                    <a href="mailto:shivansh.20651@gmail.com"  target="_blank" ><i class="fas fa-envelope-open-text"></i></a>
+                    <a href="https://www.instagram.com/theshivanshvasu"  target="_blank" ><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/theshivanshvasu"  target="_blank" ><i class="fab fa-linkedin"></i></a>
+                    <a href="https://bit.ly/svsocialhandles"  target="_blank" ><i class="fas fa-link"></i></a>
+                   </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+
+  </div>
+ 
+  
+  </div>
+</body>
+</html>

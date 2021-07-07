@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block body %}
+{% csrf_token %}
+<style>
+*{
+    background-color: rgb(180, 180, 180);
+}
+</style>
+
+<div class="container my-4 ">
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://source.unsplash.com/1600x600/?phone" class="d-block w-100" alt="...">
+    </div>
+  </div>  
+</div>
+
+
+
+<h1 class="text" style="color: blanchedalmond;  ">JOIN US</h1>
+<div class="container my-4 position='absolute'">
+<form method='POST' action=" "  >
+{% csrf_token %}
+  <div class="form group" >
+    <label for="inputname"  name="name" >Name</label>
+    <input type="desc" class="form-control" name="name" id="inputname" placeholder="KNIT">
+  </div>
+  <div class="form group">
+    <label for="inputEmail4">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="xyz@gmail.com">
+  </div>
+  <div class="form group">
+    <label for="inputPhone">Phone Number</label>
+    <input type="Number" class="form-control" name="phone" id="inputPhone" >
+  </div>
+   <div class="form group">
+    <label for="inputdesc">Message</label>
+    <input type="text" class="form-control" name="desc" id="inputtext" >
+  </div>
+   
+   
+
+
+  
+ 
+  
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</div>
+  
+</form>
+
+{% endblock body %}
